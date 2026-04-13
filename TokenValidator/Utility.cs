@@ -65,7 +65,7 @@ namespace JonathanWalton720.TokenValidator
                 tokenPayload.TokenExpirationTime = DateTimeOffset.FromUnixTimeSeconds(expirationValue).DateTime;
                 var issuedValue = int.Parse(decodedToken.Claims.FirstOrDefault(x => x.Type == "nbf").Value);
                 tokenPayload.TokenIssuedTime = DateTimeOffset.FromUnixTimeSeconds(issuedValue).DateTime;
-                tokenPayload.LastAccessOutTime = decodedToken.Claims.FirstOrDefault(x => x.Type == Constants.ClaimTypeLastAccessOutTime)?.Value;
+                tokenPayload.LogoutTime = decodedToken.Claims.FirstOrDefault(x => x.Type == Constants.ClaimTypeLastAccessOutTime)?.Value;
 
                 return tokenPayload;
             }

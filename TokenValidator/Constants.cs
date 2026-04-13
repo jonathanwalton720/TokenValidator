@@ -8,6 +8,6 @@ namespace JonathanWalton720.TokenValidator
 {
     public static class Constants
     {
-        public const string ClaimTypeLastAccessOutTime = "http://github.com/jonathanwalton720/last_access_out_time";
+        public const string ClaimTypeLastAccessOutTime = "http://github.com/jonathanwalton720/log_out_time";
     }
 }

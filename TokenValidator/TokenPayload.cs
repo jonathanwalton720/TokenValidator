@@ -24,6 +24,6 @@ namespace JonathanWalton720.TokenValidator
         }
 
         public DateTime TokenIssuedTime { get; set; }
-        public string LastAccessOutTime { get; set; }
+        public string LogoutTime { get; set; }
     }
 }
